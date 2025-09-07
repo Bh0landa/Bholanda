@@ -46,7 +46,7 @@ def tone(freq_hz: int, dur_ms: int) -> None:
 
 
 def beep_bounce() -> None:
-    # Short, higher-pitched blip (like original Pong bounce)
+    # Short, higher-pitched blip
     tone(800, 50)
 
 
