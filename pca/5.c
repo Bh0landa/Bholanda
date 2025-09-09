@@ -9,7 +9,6 @@ int main(){
         printf("4 - Sair\n");
         scanf("%d", &op);
         
-        //comandos
         switch(op){
             case 1:
                 printf("Cadastrado com sucesso!\n");
