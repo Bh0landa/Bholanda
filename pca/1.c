@@ -12,5 +12,6 @@ int main()
     printf("Oito casas : %.8f\n",3.14151692665);
     printf("Nove casas : %.9f\n",3.14151692665);
     printf("Dez casas : %.10f\n",3.14151692665);
+    
     return 0;
 }
