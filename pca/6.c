@@ -18,7 +18,7 @@ int main() {
         }
 
         if (nota < 0 || nota > 10) {
-            printf("Nota inválida! Digite um valor entre 0 e 10.\n");
+            printf("Nota invalida! Digite um valor entre 0 e 10.\n");
             continue;
         }
 
@@ -28,7 +28,7 @@ int main() {
 
     if (quantidade > 0) {
         media = soma / quantidade;
-        printf("Média da turma: %.2f\n", media);
+        printf("Media da turma: %.2f\n", media);
     } else {
         printf("Nenhuma nota foi informada.\n");
     }
