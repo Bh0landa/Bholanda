@@ -25,7 +25,7 @@ int main() {
         }
     }
 
-    printf("\nMédia das idades: %.2f\n", soma_idades / 10.0);
+    printf("\nMedia das idades: %.2f\n", soma_idades / 10.0);
     printf("Quantidade de pessoas com peso > 90kg e altura < 1,50m: %d\n", cont_peso_altura);
     if (cont_mais190 > 0) {
         printf("Porcentagem de pessoas com idade entre 10 e 30 anos entre as que medem mais de 1,90m: %.2f%%\n", (cont_10a30_mais190 * 100.0) / cont_mais190);
