@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 
 int main() {
     char codigo;
@@ -8,14 +9,15 @@ int main() {
     for (i = 1; i <= 15; i++) {
         printf("Transacao %d - Digite o codigo (V para a vista, P para a prazo): ", i);
         scanf(" %c", &codigo);
+        codigo = toupper(codigo);
         printf("Digite o valor da transacao: R$");
         scanf("%f", &valor);
 
-        if (codigo == 'V' || codigo == 'v') {
+        if (codigo == 'V') {
             total_vista += valor;
         }
         
-        else if (codigo == 'P' || codigo == 'p') {
+        else if (codigo == 'P') {
             total_prazo += valor;
         }
         
