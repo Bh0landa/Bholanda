@@ -6,7 +6,7 @@ int main() {
     float valor, total_vista = 0, total_prazo = 0, total_geral = 0;
     int i;
 
-    for (i = 1; i <= 15; i++) {
+    for (i = 1; i <= 5; i++) {
         printf("Transacao %d - Digite o codigo (V para a vista, P para a prazo): ", i);
         scanf(" %c", &codigo);
         codigo = toupper(codigo);
