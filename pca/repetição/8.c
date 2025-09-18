@@ -75,5 +75,5 @@ int main() {
     float porcentagem_ruiva = (qtd_ruiva / (float)tp) * 100;
     printf("Porcentagem de pessoas com cabelos ruivos (e olhos nao azuis): %.2f%%\n", porcentagem_ruiva);
 
-    return 0;
+    return (0);
 }

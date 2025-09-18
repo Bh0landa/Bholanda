@@ -66,5 +66,5 @@ int main() {
         printf("Nao a nimguem na quinta faixa etaria\n");
     }
 
-    return 0;
+    return (0);
 }

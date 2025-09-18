@@ -33,5 +33,5 @@ int main() {
         printf("Nenhuma nota foi informada.\n");
     }
 
-    return 0;
+    return (0);
 }

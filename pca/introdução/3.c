@@ -13,5 +13,5 @@ int main() {
         printf("O a %d e impar.\n", a);
     }
 
-    return 0;
+    return (0);
 }

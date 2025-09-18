@@ -34,5 +34,5 @@ int main() {
     printf("Total das compras efetuadas: R$%.2f\n", total_geral);
     printf("Valor da primeira prestacao das compras a prazo juntas: R$%.2f\n", total_prazo / 3);
 
-    return 0;
+    return (0);
 }

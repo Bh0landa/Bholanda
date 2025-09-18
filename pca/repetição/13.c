@@ -64,5 +64,5 @@ int main() {
         printf("31 anos ou mais: sem dados\n");
     }
 
-    return 0;
+    return (0);
 }

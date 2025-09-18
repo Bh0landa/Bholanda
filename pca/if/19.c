@@ -19,5 +19,5 @@ int main() {
     }
     printf("Seu peso ideal eh: %.2f\n", x);
 
-    return 0;
+    return (0);
 }

@@ -47,5 +47,5 @@ int main() {
             printf("Numero invalido! Digite um valor de 1 x 12.\n");
     }
 
-    return 0;
+    return (0);
 }

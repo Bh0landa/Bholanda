@@ -33,5 +33,5 @@ int main() {
         printf("Nenhuma pessoa mede mais de 1,90m.\n");
     }
 
-    return 0;
+    return (0);
 }

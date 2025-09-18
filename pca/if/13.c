@@ -41,5 +41,5 @@ int main() {
     printf("Novo preço: R$ %.2f\n", novo_preco);
     printf("Classificação: %s\n", classificacao);
 
-    return 0;
+    return (0);
 }

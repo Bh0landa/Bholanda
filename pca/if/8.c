@@ -15,5 +15,5 @@ int main() {
         printf("O novo valor do salrio com aumento de 15%%: %.2f\n", a);
     }
 
-    return 0;
+    return (0);
 }
