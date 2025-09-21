@@ -16,20 +16,20 @@ def Machado_Grande():
 def chifrada():
     resultado = random.randint(1, 20)
     total = resultado + 6
-    d1 = random.randint(1, 8)
-    d2 = random.randint(1, 8)
+    d3 = random.randint(1, 8)
+    d4 = random.randint(1, 8)
     print(f"Você usou Chifrada! HD:{total}")
     if total != (resultado == 1):
-        print(f"Dano: {d1 + d2 + 4} (2d8+4)")
+        print(f"Dano: {d3 + d4 + 4} (2d8+4)")
     if resultado == 1:
         print("Falha crítica!")
     elif resultado == 20:
         print("Crítico!")
 
 def investida():
-    d1 = random.randint(1, 8)
-    d2 = random.randint(1, 8)
-    print(f"Você usou Investida! HD:{d1 + d2} Resistência Força CD:14")
+    d5 = random.randint(1, 8)
+    d6 = random.randint(1, 8)
+    print(f"Você usou Investida! HD:{d5 + d6} Resistência Força CD:14")
 
 tamanho = int(input("Digite o número de monstros: "))
 lista = [67] * tamanho
