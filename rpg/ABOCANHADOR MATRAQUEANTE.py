@@ -3,8 +3,15 @@ import random
 def ataque_mordida():
     resultado = random.randint(1, 20)
     total = resultado + 2
+    d1 = random.randint(1, 6)
+    d2 = random.randint(1, 6)
+    d3 = random.randint(1, 6)
+    d4 = random.randint(1, 6)
+    d5 = random.randint(1, 6)
     print(f"Você usou Mordida! HD:{total}")
-    if resultado == 1:
+    if total != (resultado == 1):
+        print(f"Dano: {d1 + d2 + d3 + d4 + d5} (5d6)")
+    elif resultado == 1:
         print("Falha crítica!")
     elif resultado == 20:
         print("Crítico!")

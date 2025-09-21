@@ -8,7 +8,7 @@ def Machado_Grande():
     print(f"Você usou Machado Grande! HD:{total}")
     if total != (resultado == 1):
         print(f"Dano: {d1 + d2 + 4} (2d12+4)")
-    if resultado == 1:
+    elif resultado == 1:
         print("Falha crítica!")
     elif resultado == 20:
         print("Crítico!")
