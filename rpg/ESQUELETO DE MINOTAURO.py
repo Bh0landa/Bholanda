@@ -26,7 +26,6 @@ def chifrada():
     elif resultado == 20:
         print("Crítico!")
 
-
 def investida():
     d1 = random.randint(1, 8)
     d2 = random.randint(1, 8)
