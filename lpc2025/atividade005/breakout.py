@@ -22,16 +22,44 @@ class Paddle:
 		)
 		self.speed = 7
 
-def move(self, direction):
+	def move(self, direction):
 		if direction == 'left':
 			self.rect.x -= self.speed
 		elif direction == 'right':
 			self.rect.x += self.speed
 		self.rect.x = max(0, min(WIDTH - PADDLE_WIDTH, self.rect.x))
 
-def draw(self, surface):
+	def draw(self, surface):
 		pygame.draw.rect(surface, (255, 255, 255), self.rect)
 
+class Brick:
+	def _init_(self, x, y, color):
+		self.rect = pygame.Rect(x, y, BRICK_WIDTH, BRICK_HEIGHT)
+		self.color = color
+		self.alive = True
+
+	def draw(self, surface):
+		if self.alive:
+			pygame.draw.rect(surface, self.color, self.rect)
+
+
+	def create_bricks():
+		bricks = []
+		# Classic Breakout colors
+		colors = [
+			(255, 0, 0),      # Red
+			(255, 165, 0),    # Orange
+			(255, 255, 0),    # Yellow
+			(0, 128, 0),      # Green
+			(0, 0, 255)       # Blue
+		]
+		for row in range(BRICK_ROWS):
+			for col in range(BRICK_COLS):
+				x = col * BRICK_WIDTH
+				y = row * BRICK_HEIGHT + 60
+				color = colors[row % len(colors)]
+				bricks.append(Brick(x, y, color))
+		return bricks
 
 class Ball:
 	def _init_(self):
