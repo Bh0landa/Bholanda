@@ -13,7 +13,7 @@ PADDLE_HEIGHT = 15
 BALL_RADIUS = 10
 
 class Paddle:
-	def _init_(self):
+	def __init__(self):
 		self.rect = pygame.Rect(
 			(WIDTH - PADDLE_WIDTH) // 2,
 			HEIGHT - 40,
@@ -33,7 +33,7 @@ class Paddle:
 		pygame.draw.rect(surface, (255, 255, 255), self.rect)
 
 class Brick:
-	def _init_(self, x, y, color):
+	def __init__(self, x, y, color):
 		self.rect = pygame.Rect(x, y, BRICK_WIDTH, BRICK_HEIGHT)
 		self.color = color
 		self.alive = True
@@ -43,27 +43,27 @@ class Brick:
 			pygame.draw.rect(surface, self.color, self.rect)
 
 
-	def create_bricks():
-		bricks = []
-		# Classic Breakout colors
-		colors = [
-			(255, 0, 0),      # Red
-			(255, 165, 0),    # Orange
-			(255, 255, 0),    # Yellow
-			(0, 128, 0),      # Green
-			(0, 0, 255)       # Blue
-		]
-		for row in range(BRICK_ROWS):
-			for col in range(BRICK_COLS):
-				x = col * BRICK_WIDTH
-				y = row * BRICK_HEIGHT + 60
-				color = colors[row % len(colors)]
-				bricks.append(Brick(x, y, color))
-		return bricks
+def create_bricks():
+	bricks = []
+	# Classic Breakout colors
+	colors = [
+		(255, 0, 0),      # Red
+		(255, 165, 0),    # Orange
+		(255, 255, 0),    # Yellow
+		(0, 128, 0),      # Green
+		(0, 0, 255)       # Blue
+	]
+	for row in range(BRICK_ROWS):
+		for col in range(BRICK_COLS):
+			x = col * BRICK_WIDTH
+			y = row * BRICK_HEIGHT + 60
+			color = colors[row % len(colors)]
+			bricks.append(Brick(x, y, color))
+	return bricks
 
 class Ball:
 
-	def _init_(self):
+	def __init__(self):
 		self.x = WIDTH // 2
 		self.y = HEIGHT // 2
 		self.dx = 5
