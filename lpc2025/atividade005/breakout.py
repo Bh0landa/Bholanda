@@ -12,6 +12,13 @@ PADDLE_WIDTH = 100
 PADDLE_HEIGHT = 15
 BALL_RADIUS = 10
 
+class Ball:
+	def _init_(self):
+		self.x = WIDTH // 2
+		self.y = HEIGHT // 2
+		self.dx = 5
+		self.dy = -5
+
 #main function
 def main():
 	pygame.init()
