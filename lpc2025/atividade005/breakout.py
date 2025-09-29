@@ -12,6 +12,17 @@ PADDLE_WIDTH = 100
 PADDLE_HEIGHT = 15
 BALL_RADIUS = 10
 
+class Paddle:
+	def _init_(self):
+		self.rect = pygame.Rect(
+			(WIDTH - PADDLE_WIDTH) // 2,
+			HEIGHT - 40,
+			PADDLE_WIDTH,
+			PADDLE_HEIGHT
+		)
+		self.speed = 7
+
+
 class Ball:
 	def _init_(self):
 		self.x = WIDTH // 2
