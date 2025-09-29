@@ -22,6 +22,16 @@ class Paddle:
 		)
 		self.speed = 7
 
+def move(self, direction):
+		if direction == 'left':
+			self.rect.x -= self.speed
+		elif direction == 'right':
+			self.rect.x += self.speed
+		self.rect.x = max(0, min(WIDTH - PADDLE_WIDTH, self.rect.x))
+
+def draw(self, surface):
+		pygame.draw.rect(surface, (255, 255, 255), self.rect)
+
 
 class Ball:
 	def _init_(self):
