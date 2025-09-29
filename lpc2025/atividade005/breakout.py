@@ -27,6 +27,12 @@ def move(self):
 		if self.y <= BALL_RADIUS:
 			self.dy *= -1
 
+def draw(self, surface):
+		pygame.draw.circle(surface, (255, 255, 255), (self.x, self.y), BALL_RADIUS)
+
+def get_rect(self):
+		return pygame.Rect(self.x - BALL_RADIUS, self.y - BALL_RADIUS, BALL_RADIUS * 2, BALL_RADIUS * 2)
+
 #main function
 def main():
 	pygame.init()
