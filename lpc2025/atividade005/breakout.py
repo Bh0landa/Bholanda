@@ -19,6 +19,14 @@ class Ball:
 		self.dx = 5
 		self.dy = -5
 
+def move(self):
+		self.x += self.dx
+		self.y += self.dy
+		if self.x <= BALL_RADIUS or self.x >= WIDTH - BALL_RADIUS:
+			self.dx *= -1
+		if self.y <= BALL_RADIUS:
+			self.dy *= -1
+
 #main function
 def main():
 	pygame.init()
