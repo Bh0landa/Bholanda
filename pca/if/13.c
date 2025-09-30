@@ -5,7 +5,7 @@ int main() {
     int percentual;
     char *classificacao;
 
-    printf("Digite o preço do produto: R$ ");
+    printf("Digite o presso do produto: R$ ");
     scanf("%f", &preco);
 
     if (preco <= 50.0) {
@@ -38,8 +38,8 @@ int main() {
         classificacao = "Muito caro";
     }
 
-    printf("Novo preço: R$ %.2f\n", novo_preco);
-    printf("Classificação: %s\n", classificacao);
+    printf("Novo presso: R$ %.2f\n", novo_preco);
+    printf("Classificassao: %s\n", classificacao);
 
     return (0);
 }
