@@ -16,7 +16,7 @@ int main(){
         else{
             printf("Valor invalido!\n");
             qtd--;
-            continue;
+            
         }
     }
 
@@ -31,5 +31,6 @@ int main(){
     media = soma / qtd;
     printf("Media dos valores inseridos: %.2f\n", media);
     }
+    
     return 0;
 }
